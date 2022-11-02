@@ -10,7 +10,7 @@ export class CdkStarterStack extends cdk.Stack {
 
     // 👇 lambda function definition
     const myFunction = new lambda.Function(this, 'my-function', {
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_16_X,
       memorySize: 1024,
       timeout: cdk.Duration.seconds(5),
       handler: 'index.main',
